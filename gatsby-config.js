@@ -17,5 +17,6 @@ module.exports = {
         minify: true,
       },
     },
+    `gatsby-plugin-react-helmet`,
   ],
 }
