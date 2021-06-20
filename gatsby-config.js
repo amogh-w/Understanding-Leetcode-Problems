@@ -6,5 +6,16 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-postcss`],
+  plugins: [
+    `gatsby-plugin-postcss`,
+    {
+      resolve: "gatsby-plugin-use-dark-mode",
+      options: {
+        classNameDark: "dark",
+        classNameLight: "light",
+        storageKey: "darkMode",
+        minify: true,
+      },
+    },
+  ],
 }
